@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Form</title>
+    <style>
+      form * {
+        display: block;
+      }
+
+      .inline {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required />
+
+        <label for="comment">Comment</label>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+
+        <input class="inline" type="checkbox" name="private" id="private" />
+        <label class="inline" for="private">Make my comment private</label>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
