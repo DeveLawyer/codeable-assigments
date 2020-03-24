@@ -12,14 +12,21 @@
       <input type="text" name="first_name" id="first_name" required />
 
       <label for="last_name">Last Name</label>
-      <input type="text" name="last_name" id="last_name" />
+      <input type="text" name="last_name" id="last_name" required />
 
       <label for="email">Email</label>
       <input type="email" name="email" id="email" required />
 
-      <!-- Can only be a number and should have exactly 6 digits. Psst, check the pattern input attribute for this validation  -->
       <label for="zip_code">Zip Code</label>
-      <input type="number" name="zip_code" id="zip_code" placeholder="123456" />
+      <input
+        type="text"
+        name="zip_code"
+        id="zip_code"
+        pattern="[0-9]{6}"
+        placeholder="123456"
+        title="A 6 digits number"
+        required
+      />
 
       <label for="password">Password</label>
       <input type="password" name="password" id="password" required />
@@ -42,82 +49,85 @@
         <option value="other" selected>Other</option>
       </select>
 
-      <!-- It can only be a number and cannot be less than 0 or more than 60 -->
       <label for="years_of_experience">Years of experience</label>
       <input
         type="number"
         name="years_of_experience"
         id="years_of_experience"
+        min="0"
+        max="60"
         required
       />
+
+      <label for="languages">Languages <span>(Optional)</span></label>
+      <select name="languages" id="languages" multiple>
+        <option value="es">Spanish</option>
+        <option value="en">English</option>
+        <option value="do">Dothraki</option>
+        <option value="ky">Kryptonese</option>
+        <option value="kl">Klingon</option>
+        <option value="vu">Vulcan</option>
+        <option value="ali">Alienese</option>
+        <option value="el">Elvish</option>
+      </select>
+
+      <label for="phone_number">Cell Phone Number</label>
+      <input
+        type="tel"
+        name="phone_number"
+        id="phone_number"
+        maxlength="9"
+        pattern="[0-9]{9}"
+        title="A 9 digits number"
+        placeholder="#######"
+      />
+
+      <fieldset>
+        <legend>Ethnicity <span>(Optional)</span></legend>
+        <label for="radio1">
+          <input
+            type="radio"
+            name="ethnicity"
+            id="radio1"
+            value="earthling"
+            required
+          />
+          Earthling
+        </label>
+        <label for="radio2">
+          <input
+            type="radio"
+            name="ethnicity"
+            id="radio2"
+            value="martian"
+            required
+          />
+          Martian
+        </label>
+        <label for="radio3">
+          <input
+            type="radio"
+            name="ethnicity"
+            id="radio3"
+            value="asgardian"
+            required
+          />
+          Asgardian
+        </label>
+      </fieldset>
+
+      <input
+        type="checkbox"
+        name="terms_of_use"
+        id="terms_of_use"
+        required
+        checked
+      />
+      <label for="terms_of_use"
+        >I swear that I totally read the terms of use</label
+      >
+
+      <button type="submit">Create your account</button>
     </form>
-
-    <label for="languages">Languages <span>(Optional)</span></label>
-    <select name="languages" id="languages" multiple>
-      <option value="es">Spanish</option>
-      <option value="en">English</option>
-      <option value="do">Dothraki</option>
-      <option value="ky">Kryptonese</option>
-      <option value="kl">Klingon</option>
-      <option value="vu">Vulcan</option>
-      <option value="ali">Alienese</option>
-      <option value="el">Elvish</option>
-    </select>
-
-    <!-- Should only allow exactly 9 digits -->
-    <label for="phone_number">Cell Phone Number</label>
-    <input
-      type="tel"
-      name="phone_number"
-      id="phone_number"
-      placeholder="#######"
-    />
-
-    <fieldset>
-      <legend>Ethnicity <span>(Optional)</span></legend>
-      <label for="radio1">
-        <input
-          type="checkbox"
-          name="ethnicity"
-          id="radio1"
-          value="earthling"
-          required
-        />
-        Earthling
-      </label>
-      <label for="radio2">
-        <input
-          type="checkbox"
-          name="ethnicity"
-          id="radio2"
-          value="martian"
-          required
-        />
-        Martian
-      </label>
-      <label for="radio3">
-        <input
-          type="checkbox"
-          name="ethnicity"
-          id="radio3"
-          value="asgardian"
-          required
-        />
-        Asgardian
-      </label>
-    </fieldset>
-
-    <input
-      type="checkbox"
-      name="terms_of_use"
-      id="terms_of_use"
-      required
-      checked
-    />
-    <label for="terms_of_use"
-      >I swear that I totally read the terms of use</label
-    >
-
-    <button type="submit">Create your account</button>
   </body>
 </html>
