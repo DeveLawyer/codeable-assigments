@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(220, 239, 255, 0.906);
+  background-color: #e5e5e5;
   font-family: "Nunito", sans-serif;
 }
 
@@ -34,6 +34,12 @@ legend {
   font-size: 14px;
   margin: 10px 0 5px;
   text-transform: uppercase;
+}
+
+span {
+  color: #4a5568;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 input {
