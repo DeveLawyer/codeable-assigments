@@ -3,24 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Registration Form</title>
   </head>
   <body>
-    <h1>Ready to get started?</h1>
-    <span>Prepare to join one of the top lawyer communities</span>
+    <h1 class="form-title">Ready to get started?</h1>
+    <p class="form-subtitle">
+      Prepare to join one of the top lawyer communities
+    </p>
     <form action="#">
-      <label for="first_name">First Name</label>
-      <input type="text" name="first_name" id="first_name" required />
-
-      <label for="last_name">Last Name</label>
-      <input type="text" name="last_name" id="last_name" required />
-
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="zip_code">Zip Code</label>
+      <label class="block" for="first_name">First Name</label>
       <input
+        class="block"
+        type="text"
+        name="first_name"
+        id="first_name"
+        required
+      />
+
+      <label class="block" for="last_name">Last Name</label>
+      <input
+        class="block"
+        type="text"
+        name="last_name"
+        id="last_name"
+        required
+      />
+
+      <label class="block" for="email">Email</label>
+      <input class="block" type="email" name="email" id="email" required />
+
+      <label class="block" for="zip_code">Zip Code</label>
+      <input
+        class="block"
         type="text"
         name="zip_code"
         id="zip_code"
@@ -30,18 +49,34 @@
         required
       />
 
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" required />
+      <label class="block" for="password">Password</label>
+      <input
+        class="block"
+        type="password"
+        name="password"
+        id="password"
+        required
+      />
 
-      <label for="practicing_status">Practicing Status</label>
-      <select name="practicing_status" id="practicing_status" required>
+      <label class="block" for="practicing_status">Practicing Status</label>
+      <select
+        class="block"
+        name="practicing_status"
+        id="practicing_status"
+        required
+      >
         <option value="0">Practicing Lawyer</option>
         <option value="1">Non Practicing Lawyer</option>
         <option value="3">Retired Lawyer</option>
       </select>
 
-      <label for="legal_expertise">Area of legal expertise</label>
-      <select name="legal_expertise" id="legal_expertise" multiple>
+      <label class="block" for="legal_expertise">Area of legal expertise</label>
+      <select
+        class="block"
+        name="legal_expertise"
+        id="legal_expertise"
+        multiple
+      >
         <option value="antitrust">Antitrust</option>
         <option value="civil_rights">Civil Rights</option>
         <option value="immigration">Immigration</option>
@@ -51,8 +86,9 @@
         <option value="other" selected>Other</option>
       </select>
 
-      <label for="years_of_experience">Years of experience</label>
+      <label class="block" for="years_of_experience">Years of experience</label>
       <input
+        class="block"
         type="number"
         name="years_of_experience"
         id="years_of_experience"
