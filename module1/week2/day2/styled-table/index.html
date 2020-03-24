@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Styled Table</title>
   </head>
   <body>
     <table>
       <thead>
         <tr>
-          <th>
+          <th scope="col">
             <input type="checkbox" />
           </th>
-          <th>Company</th>
-          <th>Phone</th>
-          <th>Budget</th>
-          <th>Date</th>
+          <th scope="col" class="align-left">Company</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Budget</th>
+          <th scope="col">Date</th>
         </tr>
       </thead>
       <tbody>
@@ -23,7 +28,7 @@
           <td>
             <input type="checkbox" />
           </td>
-          <td>Toybikes</td>
+          <td class="align-left">Toybikes</td>
           <td>+1-202-555-0140</td>
           <td>$38 283</td>
           <td>May 13, 2018</td>
@@ -32,7 +37,7 @@
           <td>
             <input type="checkbox" />
           </td>
-          <td>Toybikes</td>
+          <td class="align-left">Toybikes</td>
           <td>+1-202-555-0140</td>
           <td>$38 283</td>
           <td>May 13, 2018</td>
@@ -41,7 +46,7 @@
           <td>
             <input type="checkbox" />
           </td>
-          <td>Toybikes</td>
+          <td class="align-left">Toybikes</td>
           <td>+1-202-555-0140</td>
           <td>$38 283</td>
           <td>May 13, 2018</td>
@@ -50,7 +55,7 @@
           <td>
             <input type="checkbox" />
           </td>
-          <td>Toybikes</td>
+          <td class="align-left">Toybikes</td>
           <td>+1-202-555-0140</td>
           <td>$38 283</td>
           <td>May 13, 2018</td>
@@ -59,17 +64,19 @@
           <td>
             <input type="checkbox" />
           </td>
-          <td>Toybikes</td>
+          <td class="align-left">Toybikes</td>
           <td>+1-202-555-0140</td>
           <td>$38 283</td>
           <td>May 13, 2018</td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <input type="checkbox" />
+          </td>
+          <td class="align-left">Toybikes</td>
+          <td>+1-202-555-0140</td>
+          <td>$38 283</td>
+          <td>May 13, 2018</td>
         </tr>
       </tbody>
     </table>
