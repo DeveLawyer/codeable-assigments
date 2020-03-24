@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" id="first_name" required />
+
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" id="last_name" />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <!-- Can only be a number and should have exactly 6 digits. Psst, check the pattern input attribute for this validation  -->
+      <label for="zip_code">Zip Code</label>
+      <input type="number" name="zip_code" id="zip_code" placeholder="123456" />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+
+      <label for="practicing_status">Practicing Status</label>
+      <select name="practicing_status" id="practicing_status" required>
+        <option value="0">Practicing Lawyer</option>
+        <option value="1">Non Practicing Lawyer</option>
+        <option value="3">Retired Lawyer</option>
+      </select>
+
+      <label for="legal_expertise">Area of legal expertise</label>
+      <select name="legal_expertise" id="legal_expertise" multiple>
+        <option value="antitrust">Antitrust</option>
+        <option value="civil_rights">Civil Rights</option>
+        <option value="immigration">Immigration</option>
+        <option value="memes">Memes</option>
+        <option value="gaming">Gaming</option>
+        <option value="pretending_to_work">Pretending to work</option>
+        <option value="other" selected>Other</option>
+      </select>
+
+      <!-- It can only be a number and cannot be less than 0 or more than 60 -->
+      <label for="years_of_experience">Years of experience</label>
+      <input
+        type="number"
+        name="years_of_experience"
+        id="years_of_experience"
+        required
+      />
+    </form>
+
+    <label for="languages">Languages <span>(Optional)</span></label>
+    <select name="languages" id="languages" multiple>
+      <option value="es">Spanish</option>
+      <option value="en">English</option>
+      <option value="do">Dothraki</option>
+      <option value="ky">Kryptonese</option>
+      <option value="kl">Klingon</option>
+      <option value="vu">Vulcan</option>
+      <option value="ali">Alienese</option>
+      <option value="el">Elvish</option>
+    </select>
+
+    <!-- Should only allow exactly 9 digits -->
+    <label for="phone_number">Cell Phone Number</label>
+    <input
+      type="tel"
+      name="phone_number"
+      id="phone_number"
+      placeholder="#######"
+    />
+
+    <fieldset>
+      <legend>Ethnicity <span>(Optional)</span></legend>
+      <label for="radio1">
+        <input
+          type="checkbox"
+          name="ethnicity"
+          id="radio1"
+          value="earthling"
+          required
+        />
+        Earthling
+      </label>
+      <label for="radio2">
+        <input
+          type="checkbox"
+          name="ethnicity"
+          id="radio2"
+          value="martian"
+          required
+        />
+        Martian
+      </label>
+      <label for="radio3">
+        <input
+          type="checkbox"
+          name="ethnicity"
+          id="radio3"
+          value="asgardian"
+          required
+        />
+        Asgardian
+      </label>
+    </fieldset>
+
+    <input
+      type="checkbox"
+      name="terms_of_use"
+      id="terms_of_use"
+      required
+      checked
+    />
+    <label for="terms_of_use"
+      >I swear that I totally read the terms of use</label
+    >
+
+    <button type="submit">Create your account</button>
+  </body>
+</html>
