@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  margin: 90px auto;
+  width: 935px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.img-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(293px, 1fr));
+  grid-template-columns: repeat(3, minmax(293px, 1fr));
+  grid-gap: 20px 25px;
+}
+
+.img1 {
+  order: -6;
+}
+
+.img2 {
+  order: -2;
+}
+
+.img3 {
+  order: -3;
+}
+
+.img4 {
+  order: -5;
+}
+
+.img5 {
+  order: -1;
+}
+
+.img6 {
+  order: -4;
+}
