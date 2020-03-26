@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  margin: 90px auto;
+  width: 935px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.img-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 25px;
+}
+
+.img1 {
+  order: 1;
+}
+
+.img2 {
+  order: 5;
+}
+
+.img3 {
+  order: 4;
+}
+
+.img4 {
+  order: 2;
+}
+
+.img5 {
+  order: 6;
+}
+
+.img6 {
+  order: 3;
+}
