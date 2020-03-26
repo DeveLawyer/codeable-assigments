@@ -1,0 +1,57 @@
+/* 
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+}
+
+nav {
+  background-color: #000;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/*** Left wrapper ***/
+.left-wrapper {
+  display: flex;
+  width: 275px;
+  justify-content: space-between;
+}
+
+.logo {
+  flex-grow: 0;
+}
+
+nav ul {
+  flex-grow: 1;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/*** Right wrapper ***/
+.right-wrapper {
+  display: flex;
+}
