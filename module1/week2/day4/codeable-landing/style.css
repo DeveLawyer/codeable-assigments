@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: rgb(65, 65, 65);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+  color: #a0a2a6;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
