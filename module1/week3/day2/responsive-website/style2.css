@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #ffffff;
+  font-family: "Overpass", sans-serif;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #000000;
+}
+
+.hero-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+.hero-description {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: #666666;
+}
+
+.features {
+  text-align: left;
+}
+
+.features-subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7a7a7a;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 1854.47px;
+    padding: 22px;
+    min-width: 374px;
+  }
+
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero {
+    height: 1209px;
+  }
+
+  .hero-header {
+    max-height: 229px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 80%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item-description {
+    text-align: center;
+  }
+
+  .features {
+    min-height: 576.47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .features-img {
+    width: 100%;
+  }
+
+  .feature {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 39.83px 1fr;
+    grid-auto-rows: minmax(33.25px, auto);
+    grid-template-areas:
+      "icon subtitle"
+      ". description";
+  }
+
+  .feature-icon {
+    grid-area: icon;
+  }
+
+  .features-subtitle {
+    grid-area: subtitle;
+  }
+
+  .description {
+    grid-area: description;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+  body {
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1440px) {
+  body {
+  }
+}
