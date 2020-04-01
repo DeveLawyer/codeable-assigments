@@ -7,8 +7,6 @@ int main(void)
 {
     string text = get_string("Enter some text:\n");
 
-    // printf("Text: %s\n", text);
-
     // to count letters
     int letters = 0;
 
